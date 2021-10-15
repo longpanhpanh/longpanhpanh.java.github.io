@@ -9,7 +9,7 @@ public class App {
     }
 
     // Phương thức tính có kiểu trả về là void
-    static void bmi() {
+     static void bmi() {
         double height = 1.9;
         double weight = 86.2;
         double result = weight / (height * height);
