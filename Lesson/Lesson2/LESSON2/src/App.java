@@ -14,14 +14,14 @@ public class App {
         String str = "học lập trình khó quá";
         String str1 = str.replaceAll("học", "Học");
         String str2 = str1.replaceAll("quá", "quÁ");
-        System.out.println(str2);
+        System.out.println("Chuỗi sau khi viết hoa ký tự đầu và cuối là: " + str2);
         // Cách 2:
         String firstLetter = str.substring(0, 1);
         String lastLetter = str.substring(str.length() - 1);
         String remainingLetter = str.substring(1, str.length() - 1);
         
         System.out.println(
-            "Chuỗi sau khi viết hoa các ký tự đầu và cuối là: "
+            "Chuỗi sau khi viết hoa ký tự đầu và cuối là: "
             + firstLetter.toUpperCase() + remainingLetter + lastLetter.toUpperCase()
         );      
     }
