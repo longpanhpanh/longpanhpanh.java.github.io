@@ -15,7 +15,6 @@ public class Main {
         // System.out.println("Địa chỉ:" + address);
 
         Scanner sc = new Scanner(System.in);
-        sc.close();
         Hypotenuse.hypoCalculate(4, 3);
         Random generator = new Random();
         int randomNumber = generator.nextInt(100);
@@ -26,5 +25,6 @@ public class Main {
         System.out.println("Nhập số nguyên y: ");
         int y = sc.nextInt();
         XyInput.xyCalculate(x, y);
+        sc.close();
     }
 }
