@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class FourthApp {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-
         
+
         menu();
         int choice = sc.nextInt();
         switch (choice) {
