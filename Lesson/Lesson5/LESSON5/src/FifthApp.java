@@ -32,16 +32,18 @@ public class FifthApp {
                 count++;
                 System.out.println("Tìm thấy ký tự e ở vị trí: " + i);
             }
+            
         }
         System.out.println("Ký tự e xuất hiện " + count + " lần");
 
         // Bài 2 
-        String strA = "abc def abc xyz";
+        String strA = "def abc xyzabc";
         String strB = "abc";
         Find.find(strA, strB);
 
         // Bài 3
         LongestWord.maxFind();
+        
         
         
     }
