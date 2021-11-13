@@ -16,8 +16,9 @@ public class Main {
             System.out.println("2. In thông tin sản phẩm dựa theo hãng");
             System.out.println("3. In thông tin sản phẩm dựa theo mức giá");
             System.out.println("4. Tìm kiếm theo tên sản phẩm");
-            System.out.println("Nhập lựa chọn của bạn");
             System.out.println("0. Thoát chương trình");
+            System.out.println("Nhập lựa chọn của bạn");
+
             int choice = sc.nextInt();
 
             switch (choice) {

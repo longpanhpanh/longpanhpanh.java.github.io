@@ -170,11 +170,12 @@ public class ProductRepository {
 
     public void productSortByPriceRange() {
         getData();
-        System.out.println("Dưới 2 triệu");
-        System.out.println("Từ 2 - 4 triệu");
-        System.out.println("Từ 4 - 7 triệu");
-        System.out.println("Từ 7 - 13 triệu");
-        System.out.println("Trên 13 triệu");
+        System.out.println("1. Dưới 2 triệu");
+        System.out.println("2. Từ 2 - 4 triệu");
+        System.out.println("3. Từ 4 - 7 triệu");
+        System.out.println("4. Từ 7 - 13 triệu");
+        System.out.println("5. Trên 13 triệu");
+        System.out.println("0. Thoát chương trình");
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
         switch (choice) {
