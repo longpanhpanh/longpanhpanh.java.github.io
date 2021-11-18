@@ -206,7 +206,7 @@ public class ProductRepository {
             case 4:
                 System.out.println("Từ 7 - 13 triệu");
                 for (Product p : listProduct) {
-                    if (p.getPrice() >= 7000000 && p.getPrice() < 13000000) {
+                    if (p.getPrice() >= 7000000 && p.getPrice() <= 13000000) {
                         System.out.println(p);
                     }
                 }
