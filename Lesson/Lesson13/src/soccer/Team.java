@@ -6,7 +6,6 @@ import java.util.Random;
 public class Team {
     ArrayList<Player> allPlayers = new ArrayList<>();
     ArrayList<Player> selectedTeam = new ArrayList<>();
-
     ArrayList<Player> listPlayers = getAllPlayers();
     Random general = new Random();
     int gateKeeperSize = 0;
@@ -14,7 +13,7 @@ public class Team {
     int midFieldSize = 0;
     int forwarderSize = 0;
     public ArrayList<Player> getAllPlayers() {
-        allPlayers = new ArrayList<>();
+
         allPlayers.add(new Player(1, "Alisson", Position.GK));
         allPlayers.add(new Player(1, "Donnaruma", Position.GK));
         allPlayers.add(new Player(1, "Thibaut Courtoirs", Position.GK));
@@ -44,6 +43,7 @@ public class Team {
 
 
     public void team1 () {
+
         selectedTeam = new ArrayList<Player>();
         System.out.println("Danh sách cầu thủ");
         while (gateKeeperSize < 1 ) {
@@ -84,6 +84,7 @@ public class Team {
     }
 
     public void team2 () {
+
 
         selectedTeam = new ArrayList<Player>();
         System.out.println("Danh sách cầu thủ");
@@ -128,6 +129,7 @@ public class Team {
     }
 
     public void team3 () {
+
 
         selectedTeam = new ArrayList<Player>();
         System.out.println("Danh sách cầu thủ");
