@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ProductRepository {
-    ArrayList<Product> listProduct = new ArrayList<>();
+    ArrayList<Product> listProduct;
     public  ArrayList<Product> getData() {
         listProduct = new ArrayList<>();
         listProduct.add(new Product(1 , "Oppo Reno5 8GB-128GB", "Oppo Reno5 8GB-128GB", 6688000L, 10, 7, "OPPO", Category.PHONE));
