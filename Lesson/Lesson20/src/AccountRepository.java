@@ -103,6 +103,8 @@ public class AccountRepository {
                     String newEmail = inputEmail();
                     if (newEmail == "") {
                         System.out.println("Đổi email không thành công");
+                    } else if (listAccount.stream().anyMatch(account -> account.getEmail().equals(newEmail))) {
+                        System.out.println("Email này đã tồn tại");
                     } else {
                         acc.setEmail(newEmail);
                         System.out.println("Đổi email thành công");
