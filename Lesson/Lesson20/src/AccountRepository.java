@@ -55,8 +55,13 @@ public class AccountRepository {
                         if (acc.getEmail().equals(email)) {
                             System.out.println("Nhập mật khẩu mới");
                             String newPassword = inputPassword();
-                            acc.setPassword(newPassword);
-                            checkLogin();
+                            if (newPassword == "") {
+                                System.out.println("Đổi mật khẩu không thành công");
+                            } else {
+                                acc.setPassword(newPassword);
+                                System.out.println("Mật khẩu mới đã được cập nhật");
+                                menu();
+                            }
                         } else {
                             System.out.println("Tài khoản chưa tồn tại");
                         }
